@@ -1,0 +1,6 @@
+<li multi="true" *ngIf="posts.length > 0">
+  <span *ngFor="let post of posts">
+    <p>{{ post.content }}</p>
+  </span>
+</li>
+<p class="info-text mat-body-1" *ngIf="posts.length <= 0">No posts added yet!</p>
